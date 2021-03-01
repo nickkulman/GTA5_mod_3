@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General_hero_Hud3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+
+    <!-- Блок в логотипом -->
+    <div class="logo">
+        <p>LIBERTY ROLE PLAY</p> 
+        <div class="logo_stat">
+            <div class="stat_item">
+            <div class="statist_icon">
+                <img src="icons/icon7.png" alt="">
+            </div>
+            <div class="stat_text">ИГРОКОВ В СЕТИ <br> 1234 / 1500  </div>
+            </div>
+            <div class="stat_item">
+            <div class="statist_icon">
+                <img src="icons/icon8.png" alt="">
+            </div>
+            <div class="stat_text">ВРЕМЯ <br> 12:30 [MSK]  </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Блок с ресурсами -->
+
+        <div class="resourses_container">
+            <div class="resourses">
+                <div class="resourses_layer"></div>
+                <div class="res_name">WATER</div>
+                <div class="res_line">
+                    <div class="res_line_prog"></div>
+                </div>
+            </div>
+            <div class="resourses">
+                <div class="resourses_layer"></div>
+                <div class="res_name">FOOD</div>
+                <div class="res_line">
+                    <div class="res_line_prog" id="food"></div>
+                </div>
+            </div>
+            <div class="resourses">
+                <div class="resourses_layer"></div>
+                <div class="res_name">FORCE</div>
+                <div class="res_line">
+                    <div class="res_line_prog" id="force"></div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Блок со деньгами -->
+        
+        <div class="cash">
+            <div class="cash_num">Наличные <br>$1 126,00 </div>
+            <img src="icons/icon9.png" alt="" class="cash_img">
+        </div>
+
+        <div class="cash" id="bank">
+            <div class="cash_num">Банк <br>$256 421,00 </div>
+            <img src="icons/icon10.png" alt="" class="cash_img">
+        </div>
+
+   
+        <!-- Блок с контроллерами -->
+
+        <div class="controllers">
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Курсор</div>
+                    <div class="controllers_icon">M</div>
+                </div>
+            </div>
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Скрыть</div>
+                    <div class="controllers_icon">H</div>
+                </div>
+            </div>
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Репорт</div>
+                    <div class="controllers_icon">K</div>
+                </div>
+            </div>
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Инвентарь</div>
+                    <div class="controllers_icon">W</div>
+                </div>
+            </div>
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Статистика</div>
+                    <div class="controllers_icon">B</div>
+                </div>
+            </div>
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Главная панель</div>
+                    <div class="controllers_icon">L</div>
+                </div>
+            </div>
+            <div class="controllers_items">
+                <div class="controllers_item">
+                    <div class="controllers_command">Взаимодействие</div>
+                    <div class="controllers_icon">G</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Геолокация -->
+        <div class="geo" >
+            GREEN ZONE <br> <span id="damage">THE DAMAGE ON</span>
+            <div class="geo_prog" style="border-left: 2px solid #47C147;"></div>
+        </div>
+
+        <div class="geo second">
+            VINEWOOD STREET <br> <span>Эйс-Джонс-драйв, № 521</span>
+            <div class="geo_prog second" style="border-left: 2px solid #77B4E0;"></div>
+        </div>
+
+        <!-- Задание выполнено -->
+        <div class="complete" >
+            <div class="complete_item">
+                <div class="complete_icon">
+                    <img src="icons/complete.png" alt="">
+                </div>
+                <div class="complete_text">
+                    <div class="complete_title">ЗАДАНИЕ ВЫПОЛНЕНО! </div>
+                    <div class="complete_sub">Вы выполнили ежедневный квест
+                        от Ламарка Скалете</div>
+                    
+                </div>
+                <div class="complete_close">&times</div>
+            </div>
+            
+        </div>
+
+        <div class="complete second" >
+            <div class="complete_item">
+                <div class="complete_icon">
+                    <img src="icons/complete.png" alt="">
+                </div>
+                <div class="complete_text">
+                    <div class="complete_title">ЗАДАНИЕ ВЫПОЛНЕНО! </div>
+                    <div class="complete_sub">Вы выполнили еженедельный квест
+                        от команды Liberty Role Play</div>
+                    
+                </div>
+                <div class="complete_close">&times</div>
+            </div>
+            
+        </div>
+
+        <!-- Чат -->
+        <div class="chat">
+            <div class="buttons">
+                <div id="lspd">LSPD</div>
+                <div id="ic">IC</div>
+                <div id="occ">OCC</div>
+            </div>
+            <input placeholder="Введите сообщение" type="text">
+        </div>
+
+        <!-- Карта -->
+        <div class="map">
+            <img src="img/map.png" alt="">
+        </div>
+
+
+
+</div>
+
+        
+
+</body>
+</html>
